@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
 
 :root {
-  --containerMaxWidth: 1300px;
+  --containerMaxWidth: 1200px;
   --fontSize: 15px;
   --Off-white: hsl(36, 100%, 99%);
   --GrayishBlue: hsl(233, 8%, 79%);
