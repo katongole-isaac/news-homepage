@@ -1,24 +1,58 @@
-* {
-  box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+:root {
+  --containerMaxWidth: 1300px;
+  --fontSize: 15px;
+  --Off-white: hsl(36, 100%, 99%);
+  --GrayishBlue: hsl(233, 8%, 79%);
+  --DarkGrayishBlue: hsl(236, 13%, 42%);
+  --VeryDarkBlue: hsl(240, 100%, 5%);
+  --SoftOrange: hsl(35, 77%, 62%);
+  --SoftRed: hsl(5, 85%, 63%);
+  --appFontFamily: "Outfit", sans-serif;
+  --mobileMediaQueryMaxWidth: 576px;
 }
 
-body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background-color: #fafafa;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
-div {
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper {
+  min-width: 100vw;
+  min-height: 100vh;
+  padding: 2em;
+  font-size: var(--fontSize);
+  background: var(--Off-white);
+
+  font-family: var(--appFontFamily);
+}
+.container {
+  max-width: var(--containerMaxWidth);
   margin: auto;
-  width: 400px;
+  min-height: 95vh;
+  position: relative;
 }
-div > h2 {
-  text-align: center;
-}
-.footer {
-  position: fixed;
-  bottom: 0;
-}
-.footer > * {
-  text-align: center;
-  font-style: italic;
+
+@media only screen and (max-width: 576px) {
+  .wrapper {
+    padding: 0em;
+  }
+  .container {
+    padding: 1em;
+  }
 }
